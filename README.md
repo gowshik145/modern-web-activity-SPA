@@ -131,7 +131,7 @@ Click Logout — then try visiting /dashboard — you should be redirected back 
 
 <img width="1914" height="719" alt="image" src="https://github.com/user-attachments/assets/557adc60-58f1-411c-9b20-ec7bb5980685" />
 
-<img width="1917" height="549" alt="Screenshot 2025-11-18 105632" src="https://github.com/user-attachments/assets/238e2eac-be92-4072-b617-bcae8ea6eb5e" 
+<img width="1917" height="549" alt="Screenshot 2025-11-18 105632" src="https://github.com/user-attachments/assets/238e2eac-be92-4072-b617-bcae8ea6eb5e">
 
 # Result:
 Describe the expected outputs and verification details after running the project.
