@@ -1,23 +1,34 @@
-# React SPA Dashboard (Vite)
+# AIM
 
-This is a small demo React single-page application using **React Router v6** and protected nested routes.
+To create a React Single Page Application with protected routing using React Router, including Home, Login, and Dashboard pages with nested routes.
 
-## Features
-- Home, Login pages
-- Dashboard with nested routes: Profile, Settings, Notifications
-- Protected routing (simple localStorage-based fake auth)
-- Vite dev server
+# PROCEDURE
 
-## Run locally
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start dev server:
-   ```bash
-   npm run dev
-   ```
-3. Open http://localhost:5173
+Create a new React project using Vite.
 
-## Notes
-This project uses a minimal fake authentication for demo purposes (any non-empty username/password will log you in). Do not use this auth mechanism in production.
+Install react-router-dom for routing.
+
+Create pages: Home, Login, Dashboard, Profile, Settings, Notifications.
+
+Set up React Router with nested routes inside the Dashboard.
+
+Implement fake authentication using localStorage (login, logout, isLoggedIn).
+
+Create a ProtectedRoute component to block unauthorized access.
+
+Wrap dashboard routes inside ProtectedRoute.
+
+Design a sidebar in Dashboard for navigation between nested pages.
+
+Test the app by logging in, navigating pages, and checking route protection.
+
+# Output:
+## Home:
+<img width="1914" height="719" alt="image" src="https://github.com/user-attachments/assets/e1452e3e-664d-4f1a-8dd6-17e248bfd99c" />
+
+## Dashboard:
+<img width="1917" height="549" alt="image" src="https://github.com/user-attachments/assets/bec48fb0-5dcd-4ac4-974f-9f3067e220f2" />
+
+# RESULT
+
+A fully functional SPA was developed where only logged-in users can access nested dashboard pages, and navigation works smoothly through protected and public routes.
