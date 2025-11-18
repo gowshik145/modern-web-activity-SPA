@@ -24,27 +24,28 @@ react-router-dom for client routing:
 npm install react-router-dom
 
 2. Project structure (key files)
+```
 react-spa-dashboard/
 ├─ package.json
 ├─ index.html
 └─ src/
-   ├─ main.jsx            # React entry
-   ├─ App.jsx             # Router setup + top-level layout
+   ├─ main.jsx            
+   ├─ App.jsx            
    ├─ styles.css
    ├─ pages/
    │  ├─ Home.jsx
    │  ├─ Login.jsx
-   │  ├─ Dashboard.jsx    # contains <Outlet /> + sidebar links
+   │  ├─ Dashboard.jsx   
    │  └─ dashboard/
    │     ├─ Profile.jsx
    │     ├─ Settings.jsx
    │     └─ Notifications.jsx
    └─ utils/
-      ├─ auth.js          # demo auth helpers (login, logout, isLoggedIn)
+      ├─ auth.js         
       └─ ProtectedRoute.jsx
-
-3. Routing approach
-
+```
+4. Routing approach
+```
 Use react-router-dom v6 routes in App.jsx.
 
 Routes defined:
@@ -62,9 +63,9 @@ Routes defined:
 /dashboard/notifications → Notifications
 
 Dashboard contains a sidebar with NavLinks to the nested routes and an <Outlet /> to render the current nested page.
-
+```
 4. Protected routing & authentication
-
+```
 src/utils/auth.js implements a minimal fake auth using localStorage:
 
 login(username, password) — saves demo user when both fields non-empty.
@@ -78,9 +79,9 @@ ProtectedRoute.jsx checks isLoggedIn():
 If not logged in, redirects to /login using <Navigate to="/login" state={{from: location}} replace />.
 
 If logged in, renders children (the dashboard component).
-
+```
 5. Login flow
-
+```
 Login.jsx contains a simple form for username/password.
 
 On submit:
@@ -88,7 +89,7 @@ On submit:
 If both fields non-empty, call login() and navigate to /dashboard.
 
 If previously logged in, redirect to dashboard.
-
+```
 6. Styling & UI
 
 Minimal styles.css for layout:
